@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i|Raleway:300&display=swap" rel="stylesheet">
+
+    <style>
+        img {
+
+            height: 100%;
+        }
+
+        body {}
+
+        .data-container {
+
+            margin: 0 auto;
+            padding: 20px 10px 30px 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            background-color: #f4f4f4;
+
+
+
+        }
+
+        .backgroundbox {
+            background-color: white;
+            padding: 50px;
+            /*            box-shadow: 5px 10px black;*/
+            width: 200px;
+            height: 300px;
+        }
+
+        article {
+            place-self: center center;
+        }
+
+        .splash {
+            background-color: #0cb1f2;
+            padding: 250px 0 250px 0;
+
+
+
+        }
+
+        h3,
+        p {
+            margin-left: 5px;
+        }
+
+        p {
+            max-width: 250px;
+        }
+
+        @media screen and (min-width:768px) {
+
+            body {
+                margin: 0 100px 0 100px;
+            }
+
+            article {
+                padding: 70px 0 0 0;
+            }
+
+        }
+    </style>
+</head>
+<header>
+    <nav>
+
+        <a href="#alle" class="filter valgt" data-kategori="alle">Alle</a>
+        <a href="#sansserif" class="filter" data-kategori="sansserif">Sans-serif</a>
+        <a href="#serif" class="filter" data-kategori="serif">Serif</a>
+
+
+    </nav>
+</header>
+
+<body>
+    <div class="wrapper">
+        <div class="splash">
+            <h1>Typografi</h1>
+        </div>
+    </div>
+
+    <!--    <h3 class="skrifttyper_kategori">Alle</h3>-->
+    <section class="data-container"></section>
+
+    <template>
+        <article class="skrifttyper">
+
+            <div class="backgroundbox">
+                <img src="" alt="billede">
+            </div>
+
+            <h3 id="navn"></h3>
+            <p id="classic"></p>
+
+            <p id="style"></p>
+
+        </article>
+    </template>
+
+    <section id="detalje" class="">
+        <article id="detaljeView">
+            <button id="detalje_button">X</button>
+            <h1></h1>
+            <img>
+            <p></p>
+            <p></p>
+        </article>
+    </section>
+
+    <script src="script.js"></script>
+</body></html>
