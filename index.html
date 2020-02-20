@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i|Raleway:300&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="dropdown_style.css">
     <style>
         img {
 
@@ -69,14 +69,43 @@
     </style>
 </head>
 <header>
-    <nav>
-
-        <a href="#alle" class="filter valgt" data-kategori="alle">Alle</a>
-        <a href="#sansserif" class="filter" data-kategori="sansserif">Sans-serif</a>
-        <a href="#serif" class="filter" data-kategori="serif">Serif</a>
 
 
-    </nav>
+
+    <div class="navbar">
+        <div class="all">
+            <button class="alle">ALL</button>
+        </div>
+        <div class="dropdown_headings">
+            <button class="dropbtn">HEADINGS
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+
+                <a href="#" class="filter valgt" data-type="overskriftbrodtekst">ALLE</a>
+                <a href="#" class="filter" data-kategori="sans-serif">SANS-SERIF</a>
+                <a href="#" class="filter" data-kategori="serif">SERIF</a>
+            </div>
+        </div>
+
+        <!--
+        <div class="dropdown_bodytexts">
+            <button class="dropbtn">BODY TEXTS
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+
+                <a href="#alle" class="filter valgt" data-kategori="alle">ALLE</a>
+                <a href="#sansserif" class="filter" data-kategori="sans-serif">SANS-SERIF</a>
+                <a href="#serif" class="filter" data-kategori="serif">SERIF</a>
+            </div>
+        </div>
+-->
+
+    </div>
+    <nav> </nav>
+
+
 </header>
 
 <body>
