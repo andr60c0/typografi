@@ -1,7 +1,7 @@
         @font-face {
             font-family: simplifica;
-            src: url('simplifica_typeface-webfont.woff2') format('woff2'),
-                url('simplifica_typeface-webfont.woff') format('woff');
+            src: url('font/simplifica_typeface-webfont.woff2') format('woff2'),
+                url('font/simplifica_typeface-webfont.woff') format('woff');
             font-weight: normal;
             font-style: normal;
 
@@ -126,8 +126,8 @@
 
         @font-face {
             font-family: 'audreybold';
-            src: url('audrey-bold-webfont.woff2') format('woff2'),
-                url('audrey-bold-webfont.woff') format('woff');
+            src: url('font/audrey-bold-webfont.woff2') format('woff2'),
+                url('font/audrey-bold-webfont.woff') format('woff');
             font-weight: normal;
             font-style: normal;
 
@@ -138,8 +138,8 @@
 
         @font-face {
             font-family: 'audreybold_italic';
-            src: url('audrey-boldoblique-webfont.woff2') format('woff2'),
-                url('audrey-boldoblique-webfont.woff') format('woff');
+            src: url('font/audrey-boldoblique-webfont.woff2') format('woff2'),
+                url('font/audrey-boldoblique-webfont.woff') format('woff');
             font-weight: normal;
             font-style: normal;
 
@@ -150,8 +150,8 @@
 
         @font-face {
             font-family: 'audreymedium';
-            src: url('audrey-medium-webfont.woff2') format('woff2'),
-                url('audrey-medium-webfont.woff') format('woff');
+            src: url('font/audrey-medium-webfont.woff2') format('woff2'),
+                url('font/audrey-medium-webfont.woff') format('woff');
             font-weight: normal;
             font-style: normal;
 
@@ -162,8 +162,8 @@
 
         @font-face {
             font-family: 'audreymedium_oblique';
-            src: url('audrey-mediumoblique-webfont.woff2') format('woff2'),
-                url('audrey-mediumoblique-webfont.woff') format('woff');
+            src: url('font/audrey-mediumoblique-webfont.woff2') format('woff2'),
+                url('font/audrey-mediumoblique-webfont.woff') format('woff');
             font-weight: normal;
             font-style: normal;
 
@@ -174,8 +174,8 @@
 
         @font-face {
             font-family: audrey;
-            src: url('audrey-normal-webfont.woff2') format('woff2'),
-                url('audrey-normal-webfont.woff') format('woff');
+            src: url('font/audrey-normal-webfont.woff2') format('woff2'),
+                url('font/audrey-normal-webfont.woff') format('woff');
             font-weight: normal;
             font-style: normal;
 
@@ -186,8 +186,8 @@
 
         @font-face {
             font-family: 'audreyitalic';
-            src: url('audrey-normaloblique-webfont.woff2') format('woff2'),
-                url('audrey-normaloblique-webfont.woff') format('woff');
+            src: url('font/audrey-normaloblique-webfont.woff2') format('woff2'),
+                url('font/audrey-normaloblique-webfont.woff') format('woff');
             font-weight: normal;
             font-style: normal;
 
