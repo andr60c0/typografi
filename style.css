@@ -42,25 +42,37 @@
         }
 
         .splash {
-            background-color: #0cb1f2;
+            background-color: rgb(10, 192, 247);
             padding: 250px 0 250px 0;
+        }
 
-
-
+        .splash p {
+            font-family: simplifica;
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: 100;
+            letter-spacing: 10px;
+            margin: 0;
         }
 
         h1 {
             font-family: simplifica;
+            text-align: center;
+            color: white;
+            font-size: 10rem;
+            font-weight: 100;
+            letter-spacing: 10px;
+            margin: 0;
         }
 
         h3,
         p {
             margin-left: 5px;
+
         }
 
-        p {
-            max-width: 250px;
-        }
+        p {}
 
         @media screen and (min-width:768px) {
 
