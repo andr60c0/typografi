@@ -47,7 +47,7 @@
 
 
 @font-face {
-    font-family: audreyregular;
+    font-family: audrey;
     src: url('audrey-normal-webfont.woff2') format('woff2'),
         url('audrey-normal-webfont.woff') format('woff');
     font-weight: normal;
@@ -73,12 +73,13 @@ header {
     /*    background-image: linear-gradient(rgb(242, 232, 175), rgba(0, 0, 0, 0));*/
     /*    width: 100%;*/
     /*    margin: 0 100px 0 100px;*/
-    width: 100%;
+    /*    width: 100%;*/
 
 }
 
 header button {
-    font-family: audreyregular;
+    font-family: audrey;
+    font-size: 1rem;
     color: white;
 }
 
@@ -86,7 +87,7 @@ header nav {
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+
 
 
 
@@ -95,9 +96,9 @@ header nav {
 }
 
 header nav a {
-    font-family: audreyregular;
+    font-family: audrey;
     text-decoration: none;
-
+    color: white;
 }
 
 
@@ -106,52 +107,41 @@ header nav a {
     /*    background-image: linear-gradient(rgb(219, 218, 212), rgba(0, 0, 0, 0));*/
     display: flex;
     background-color: #242A31;
+    font-family: audrey;
+    font-size: 1rem;
+    color: white;
 
 
 
 }
 
 .navbar a {
-    float: right;
 
-
-    text-align: center;
 
     text-decoration: none;
 }
 
 .dropdown_headings,
 .dropdown_bodytexts {
-    float: left;
+
     overflow: hidden;
+    color: white;
 }
 
 
 
-.alle {
-    float: right;
-
-
-    text-align: center;
-
-    text-decoration: none;
-
-}
+.alle {}
 
 
 .dropdown_headings .dropbtn,
 
 .dropdown_bodytexts .dropbtn,
 .all .dropbtn {
-
     border: none;
-    outline: none;
     background-color: transparent;
+    color: white;
+    padding: 20px 50px 40px 50px;
 
-    padding: 14px 16px;
-
-
-    margin: 0;
 }
 
 .navbar a:hover {}
@@ -161,18 +151,18 @@ header nav a {
 .dropdown-content {
     display: none;
     position: sticky;
-    min-width: 100px;
-
+    /*    min-width: 100px;*/
+    color: white;
     z-index: 1;
+    margin-left: 50px;
+
 }
 
 .dropdown-content a {
-    float: none;
-
-
-
+    color: white;
     display: flex;
-    text-align: right;
+    padding-bottom: 50px;
+
 }
 
 .dropdown-content a:hover {}
