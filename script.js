@@ -3,7 +3,6 @@
  const endpoint = "https://spreadsheets.google.com/feeds/list/14zgpcaQEX7A3CRcGnQX5rMbImw_OoG_9FypgNzZ4kh4/od6/public/values?alt=json";
  let alleSkrifttyper = [];
  let filter = "alle";
- let filterOverskrift = "overskrift"
  document.addEventListener("DOMContentLoaded", start);
 
  function start() {
@@ -47,7 +46,7 @@
 
          /*(filter == "alle" || (filter == "sans-serif" && skrifttype.gsx$type.$t == "sans-serif" && skrifttype.gsx$overskriftbrodtekst.$t == "overskrift") || (filter == "serif" && skrifttype.gsx$type.$t == "serif" && skrifttype.gsx$overskriftbrodtekst.$t == "overskrift") || (filter == "alleO" && skrifttype.gsx$overskriftbrodtekst.$t == "overskrift")) */
 
-         if (filter == "alle" || (filter == skrifttype.gsx$type.$t && skrifttype.gsx$overskriftbrodtekst.$t == "overskrift") || (filter == "alleO" && skrifttype.gsx$overskriftbrodtekst.$t == "overskrift")) {
+         if (filter == "alle" || (filter == skrifttype.gsx$type.$t && skrifttype.gsx$overskriftbrodtekst.$t == "overskrift") || (filter == "alleO" && skrifttype.gsx$overskriftbrodtekst.$t == "overskrift") || (filter == "alleB" && skrifttype.gsx$overskriftbrodtekst.$t == "brødtekst")) {
 
 
              let klon = template.cloneNode(true).content;
