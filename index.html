@@ -12,7 +12,10 @@
             height: 100%;
         }
 
-        body {}
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
         .data-container {
 
@@ -57,38 +60,46 @@
 
         @media screen and (min-width:768px) {
 
-            body {
-                margin: 0 100px 0 100px;
-            }
+            body {}
 
             article {
                 padding: 70px 0 0 0;
             }
 
         }
+
+        .wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .navbar {
+            max-width: 1400px;
+        }
     </style>
 </head>
-<header>
 
 
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="navbar">
+                <div class="all">
+                    <button class="alle">ALL</button>
+                </div>
+                <div class="dropdown_headings">
+                    <button class="dropbtn">HEADINGS
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
 
-    <div class="navbar">
-        <div class="all">
-            <button class="alle">ALL</button>
-        </div>
-        <div class="dropdown_headings">
-            <button class="dropbtn">HEADINGS
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
+                        <a href="#" class="filter valgt" data-kategori="alleO">ALLE</a>
+                        <a href="#" class="filter" data-kategori="sans-serif">SANS-SERIF</a>
+                        <a href="#" class="filter" data-kategori="serif">SERIF</a>
+                    </div>
+                </div>
 
-                <a href="#" class="filter valgt" data-type="overskriftbrodtekst">ALLE</a>
-                <a href="#" class="filter" data-kategori="sans-serif">SANS-SERIF</a>
-                <a href="#" class="filter" data-kategori="serif">SERIF</a>
-            </div>
-        </div>
-
-        <!--
+                <!--
         <div class="dropdown_bodytexts">
             <button class="dropbtn">BODY TEXTS
                 <i class="fa fa-caret-down"></i>
@@ -102,46 +113,43 @@
         </div>
 -->
 
-    </div>
-    <nav> </nav>
+            </div>
+            <nav> </nav>
+        </header>
 
 
-</header>
-
-<body>
-    <div class="wrapper">
         <div class="splash">
             <h1>Typografi</h1>
         </div>
+
+
+        <!--    <h3 class="skrifttyper_kategori">Alle</h3>-->
+        <section class="data-container"></section>
+
+        <template>
+            <article class="skrifttyper">
+
+                <div class="backgroundbox">
+                    <img src="" alt="billede">
+                </div>
+
+                <h3 id="navn"></h3>
+                <p id="classic"></p>
+
+                <p id="style"></p>
+
+            </article>
+        </template>
+
+        <section id="detalje" class="">
+            <article id="detaljeView">
+                <button id="detalje_button">X</button>
+                <h1></h1>
+                <img>
+                <p></p>
+                <p></p>
+            </article>
+        </section>
     </div>
-
-    <!--    <h3 class="skrifttyper_kategori">Alle</h3>-->
-    <section class="data-container"></section>
-
-    <template>
-        <article class="skrifttyper">
-
-            <div class="backgroundbox">
-                <img src="" alt="billede">
-            </div>
-
-            <h3 id="navn"></h3>
-            <p id="classic"></p>
-
-            <p id="style"></p>
-
-        </article>
-    </template>
-
-    <section id="detalje" class="">
-        <article id="detaljeView">
-            <button id="detalje_button">X</button>
-            <h1></h1>
-            <img>
-            <p></p>
-            <p></p>
-        </article>
-    </section>
-
     <script src="script.js"></script>
 </body></html>

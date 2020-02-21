@@ -17,13 +17,13 @@
  async function loadData() {
      const response = await fetch(endpoint);
      alleSkrifttyper = await response.json();
-     console.log(alleSkrifttyper);
+     //console.log(alleSkrifttyper);
      visSkrifttyper();
  }
 
  function filtrering() {
      filter = this.dataset.kategori;
-     console.log(filter);
+     console.log("filtrering", filter);
 
 
 
@@ -43,10 +43,11 @@
 
      alleSkrifttyper.feed.entry.forEach(skrifttype => {
          /* if ((filter == "alle" || filter == skrifttype.gsx$type.$t) || ((filter == "overskrift" || filter == skrifttype.gsx$overskriftbrodtekst.$t) && (filter == "serif" || filter == skrifttype.gsx$type.$t))) {*/
+         console.log("fffffff", filter, skrifttype.gsx$type.$t)
 
-         if (filter == "alle" || skrifttype.gsx$overskriftbrodtekst.$t == "overskrift" && filter == skrifttype.gsx$type.$t)
+         /*(filter == "alle" || (filter == "sans-serif" && skrifttype.gsx$type.$t == "sans-serif" && skrifttype.gsx$overskriftbrodtekst.$t == "overskrift") || (filter == "serif" && skrifttype.gsx$type.$t == "serif" && skrifttype.gsx$overskriftbrodtekst.$t == "overskrift") || (filter == "alleO" && skrifttype.gsx$overskriftbrodtekst.$t == "overskrift")) */
 
-         {
+         if (filter == "alle" || (filter == skrifttype.gsx$type.$t && skrifttype.gsx$overskriftbrodtekst.$t == "overskrift") || (filter == "alleO" && skrifttype.gsx$overskriftbrodtekst.$t == "overskrift")) {
 
 
              let klon = template.cloneNode(true).content;
@@ -65,13 +66,13 @@
          }
 
 
-     })
+     });
 
 
  }
 
  function addEventListenersToButtons() {
-     console.log("Button clicked");
+     //console.log("Button clicked");
      document.querySelectorAll(".filter").forEach(elm => {
          elm.addEventListener("click", filtrering);
      })

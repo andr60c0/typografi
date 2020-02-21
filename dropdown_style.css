@@ -1,14 +1,25 @@
 header {
     position: fixed;
-    background-image: linear-gradient(rgb(242, 232, 175), rgba(0, 0, 0, 0));
-    width: 100%;
+    /*    background-image: linear-gradient(rgb(242, 232, 175), rgba(0, 0, 0, 0));*/
+    /*    width: 100%;*/
+    /*    margin: 0 100px 0 100px;*/
+        width: 100%;
+
+
+
 
 }
 
 header nav {
+
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+
+
+
+
+
 }
 
 header nav a {
@@ -20,8 +31,11 @@ header nav a {
 
 .navbar {
     overflow: scroll;
-    background-image: linear-gradient(rgb(219, 218, 212), rgba(0, 0, 0, 0));
+    /*    background-image: linear-gradient(rgb(219, 218, 212), rgba(0, 0, 0, 0));*/
     display: flex;
+    background-color: #242A31;
+
+
 }
 
 .navbar a {
