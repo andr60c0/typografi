@@ -1,13 +1,85 @@
+@font-face {
+    font-family: 'audreybold';
+    src: url('audrey-bold-webfont.woff2') format('woff2'),
+        url('audrey-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'audreybold_italic';
+    src: url('audrey-boldoblique-webfont.woff2') format('woff2'),
+        url('audrey-boldoblique-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'audreymedium';
+    src: url('audrey-medium-webfont.woff2') format('woff2'),
+        url('audrey-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'audreymedium_oblique';
+    src: url('audrey-mediumoblique-webfont.woff2') format('woff2'),
+        url('audrey-mediumoblique-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: audreyregular;
+    src: url('audrey-normal-webfont.woff2') format('woff2'),
+        url('audrey-normal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'audreyitalic';
+    src: url('audrey-normaloblique-webfont.woff2') format('woff2'),
+        url('audrey-normaloblique-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 header {
     position: fixed;
     /*    background-image: linear-gradient(rgb(242, 232, 175), rgba(0, 0, 0, 0));*/
     /*    width: 100%;*/
     /*    margin: 0 100px 0 100px;*/
-        width: 100%;
+    width: 100%;
 
+}
 
-
-
+header button {
+    font-family: audreyregular;
+    color: white;
 }
 
 header nav {
@@ -23,9 +95,9 @@ header nav {
 }
 
 header nav a {
-    padding: 2vw;
+    font-family: audreyregular;
     text-decoration: none;
-    font-family: 'playfair_displaybold';
+
 }
 
 
@@ -36,14 +108,15 @@ header nav a {
     background-color: #242A31;
 
 
+
 }
 
 .navbar a {
     float: right;
-    font-size: 1rem;
-    color: #812621;
+
+
     text-align: center;
-    padding: 1rem;
+
     text-decoration: none;
 }
 
@@ -54,29 +127,30 @@ header nav a {
 }
 
 
-.all {
-    font-size: 1em;
-    border: none;
-    outline: none;
-    color: #812621;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: 'vogue';
-    margin: 0;
+
+.alle {
+    float: right;
+
+
+    text-align: center;
+
+    text-decoration: none;
 
 }
 
 
 .dropdown_headings .dropbtn,
 
-.dropdown_bodytexts .dropbtn {
-    font-size: 1em;
+.dropdown_bodytexts .dropbtn,
+.all .dropbtn {
+
     border: none;
     outline: none;
-    color: #812621;
+    background-color: transparent;
+
     padding: 14px 16px;
-    background-color: inherit;
-    font-family: 'vogue';
+
+
     margin: 0;
 }
 
@@ -88,22 +162,20 @@ header nav a {
     display: none;
     position: sticky;
     min-width: 100px;
-    box-shadow: 1px 8px 16px 1px rgba(0, 0, 0, 0.2);
+
     z-index: 1;
 }
 
 .dropdown-content a {
     float: none;
-    color: #812621;
-    padding: 12px 16px;
-    text-decoration: none;
+
+
+
     display: flex;
     text-align: right;
 }
 
-.dropdown-content a:hover {
-    background-color: #f1f1f1f1;
-}
+.dropdown-content a:hover {}
 
 .dropdown_headings:hover .dropdown-content,
 
