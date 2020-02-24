@@ -5,8 +5,84 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i|Raleway:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i|Crimson+Text:400,400i,600,600i,700,700i|Old+Standard+TT:400,400i,700|Oswald:200,300,400,500,600,700|PT+Mono|Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Slab:100,200,300,400,500,600,700,800,900|Ubuntu:300,300i,400,400i,500,500i,700,700i|Vollkorn:400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.typekit.net/awq5rwn.css">
     <style>
+        .roboto {
+            font-family: 'Roboto Slab';
+        }
+
+        .arvo {
+            font-family: 'Arvo';
+        }
+
+        .playfair {
+            font-family: 'Playfair Display';
+            color: red;
+
+        }
+
+        @font-face {
+            font-family: 'aileron';
+            src:
+                /*                url('font/Aileron-Regular-webfont.woff2') format('woff2'),*/
+                url('font/Aileron-Regular-webfont.woff') format('woff');
+
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+
+        .aileron {
+            font-family: 'aileron';
+        }
+
+        .titling {
+            font-family: titling-gothic-fb-condensed, sans-serif;
+            font-weight: 100;
+        }
+
+        @font-face {
+            font-family: audrey;
+            src: url('font/audrey-normal-webfont.woff2') format('woff2'),
+                url('font/audrey-normal-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+        .audrey {
+            font-family: "Audrey";
+        }
+
+        .ptmono {
+            font-family: 'PT Mono';
+        }
+
+        .crimson {
+            font-family: 'Crimson Text';
+
+        }
+
+        .oldstandard {
+            font-family: 'Old Standard TT';
+        }
+
+        .vollkorn {
+            font-family: 'Vollkorn';
+        }
+
+        .oswald {
+            font-family: 'Oswald';
+        }
+
+        .ubuntu {
+            font-family: 'Ubuntu';
+        }
+
+
         img {
             width: 100%;
             height 60%;
@@ -33,30 +109,98 @@
         }
 
         #skrifttyperPop {
-            width: 60vw;
+            width: 80vw;
             min-height: 50vh;
             margin: auto;
-            padding: 4rem;
             background: white;
         }
 
         h1 {
-            font-size: 7rem;
-            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+
             text-align: center;
-            margin-top: 200px;
-            color: #E4DFD8;
-            letter-spacing: 8px;
+            color: #FFFFFF;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            /*            font-weight: 300;*/
 
 
         }
 
         p {
             padding: 10px;
-            font-family: 'Raleway', sans-serif;
+
+            letter-spacing: 3px;
 
 
         }
+
+        #h1pop {
+            background-color: rgb(10, 192, 247);
+            padding: 150px 0 150px 0;
+            margin: 0;
+        }
+
+
+        .imgPop {
+            padding: 30px;
+        }
+
+        .longTextBox {
+            color: rgb(10, 192, 247);
+            background-color: #242A31;
+            /*            padding: 40px;*/
+
+        }
+
+        .shortTextBox {
+            background-color: #F4F4F4;
+            color: rgb(10, 192, 247);
+            padding: 40px;
+
+        }
+
+
+
+        @media screen and (min-width:768px) {
+            .imgPop {
+
+
+                margin: 0 auto;
+                padding: 30px 280px 30px 280px;
+                background-color: #F4F4F4;
+            }
+
+            .longTextBox {
+
+                padding: 100px 250px 100px 250px;
+                margin: 0;
+
+            }
+
+            .shortTextBox {
+                padding: 100px 250px 100px 250px;
+                margin: 0;
+
+            }
+
+            h1 {
+                font-size: 6rem;
+            }
+
+            p {
+                font-size: 2rem;
+            }
+
+            .characterSet {
+                background-color: red;
+                width: 100%;
+                height: 100%;
+
+            }
+
+        }
+
     </style>
 </head>
 
@@ -66,9 +210,14 @@
         <article id="skrifttyperPop">
             <button id="detalje_button">←</button>
             <h1 id="h1pop"></h1>
-            <img>
-            <p></p>
-            <p></p>
+            <div class="imgPop">
+                <img class=plakat>
+            </div>
+            <p class="longTextBox"></p>
+            <p class="shortTextBox"></p>
+            <div class="characterSet">
+                <img>
+            </div>
         </article>
     </section>
 
@@ -114,10 +263,18 @@
                 if (skrifttype.gsx$id.$t == id) {
                     detalje.querySelector("h1").textContent = skrifttype.gsx$navn.$t;
                     detalje.querySelector("img").src = `img/${skrifttype.gsx$imgs.$t}.svg`;
-                    detalje.querySelector("p").textContent = skrifttype.gsx$kort.$t;
-                    detalje.querySelector("p+p").textContent = skrifttype.gsx$lang.$t;
+                    detalje.querySelector("p+p").textContent = skrifttype.gsx$kort.$t;
+                    detalje.querySelector("p").textContent = skrifttype.gsx$lang.$t;
+
+                    detalje.querySelector("#skrifttyperPop").classList.add(skrifttype.gsx$class.$t);
+
+
+                    //her mangler kode til at hente characterset billedet
                 }
             });
         }
+
     </script>
-</body></html>
+</body>
+
+</html>
