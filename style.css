@@ -74,6 +74,15 @@
 
         p {}
 
+
+
+
+
+
+
+
+
+
         @media screen and (min-width:768px) {
 
             body {}
@@ -82,16 +91,154 @@
                 padding: 70px 0 0 0;
             }
 
+            header {
+                position: relative;
+
+            }
+
+            nav {
+                background-color: #242A31;
+                display: grid;
+                grid-template-columns: 100px 1fr;
+                grid-template-rows: 1fr;
+                font-family: audrey;
+                font-size: 1.2rem;
+                position: fixed;
+                width: 100%;
+
+
+            }
+
+            .list_wrapper {
+                display: flex;
+                justify-content: center;
+                margin: 0;
+                grid-row: 1;
+                grid-column: 1/3;
+                align-self: center;
+            }
+
+            .span_left {
+                width: 2px;
+                height: 20px;
+                background-color: white;
+                /*                margin: 0px 25px 0px 50px;*/
+
+            }
+
+            .span_right {
+                width: 2px;
+                height: 20px;
+                background-color: white;
+                /*                margin: 0px 50px 0px 25px;*/
+            }
+
+
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+                color: white;
+            }
+
+            .headings ul {}
+
+            .headings {
+                margin: 0px 50px 0px 50px;
+
+            }
+
+            .body_texts {
+                margin: 0px 50px 0px 50px;
+            }
+
+            .all {
+                margin: 0px 50px 0px 50px;
+            }
+
+            .dropdown_content li {
+                padding: 10px;
+
+
+
+            }
+
+            .dropdown_content:nth-child(1) {
+                padding-top: 25px;
+            }
+
+
+
+
+
+
+            .dropdown_content {
+                display: none;
+                position: absolute;
+                /*                background-color: #242A31;*/
+                background: rgb(36, 42, 49);
+                background: linear-gradient(180deg, rgba(36, 42, 49, 1) 19%, rgba(146, 166, 190, 0.9374124649859944) 100%);
+                color: white;
+                z-index: 1;
+                margin: 0;
+                border-radius: 10px;
+            }
+
+            .dropdown_content a {
+                /*                padding: 0;*/
+
+            }
+
+            .headings:hover .dropdown_content {
+                display: flex;
+
+
+                flex-direction: column;
+
+            }
+
+            .body_texts:hover .dropdown_content {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .logo {
+                width: 100px;
+                height: 75px;
+                grid-row: 1;
+                grid-column: 1;
+                padding: 5px;
+            }
+
+
+
         }
 
-        .wrapper {
-            max-width: 1400px;
-            margin: 0 auto;
+        @media screen and (min-width:1220px) {
+
+            body {}
+
+            article {
+                padding: 70px 0 0 0;
+            }
+
+            .wrapper {
+                max-width: 90vw;
+                margin: 0 auto;
+            }
+
+            nav {
+                max-width: 90vw;
+
+            }
+
         }
 
-        .navbar {
-            max-width: 1400px;
-        }
+
+
+
+
+
 
 
 
@@ -192,73 +339,5 @@
                 url('font/audrey-normaloblique-webfont.woff') format('woff');
             font-weight: normal;
             font-style: normal;
-
-        }
-
-
-
-
-
-
-        header {}
-
-        nav {
-            background-color: red;
-            display: grid;
-            grid-template-columns: 100px 1fr;
-            grid-template-rows: 1fr;
-        }
-
-        .list_wrapper {
-            display: flex;
-            justify-content: center;
-            margin: 0;
-            grid-row: 1;
-            grid-column: 1/3;
-            align-self: center;
-
-        }
-
-
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .headings ul,
-        li {
-            margin: 0px 50px 0px 50px;
-        }
-
-        .dropdown_content {
-            display: none;
-            position: absolute;
-            background-color: white;
-            z-index: 1;
-        }
-
-        .dropdown_content a {
-            padding: 0;
-
-        }
-
-        .headings:hover .dropdown_content {
-            display: flex;
-            flex-direction: column;
-
-        }
-
-        .body_texts:hover .dropdown_content {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .logo {
-            width: 100px;
-            height: 75px;
-            grid-row: 1;
-            grid-column: 1;
-
 
         }
