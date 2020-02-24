@@ -41,6 +41,10 @@
             place-self: center center;
         }
 
+        article p {
+            max-width: 300px;
+        }
+
         .splash {
             background-color: rgb(10, 192, 247);
             padding: 250px 0 250px 0;
@@ -60,10 +64,14 @@
             font-family: simplifica;
             text-align: center;
             color: white;
-            font-size: 10rem;
+            font-size: 3rem;
             font-weight: 100;
             letter-spacing: 10px;
             margin: 0;
+        }
+
+        .splash p {
+            font-size: 1rem;
         }
 
         h3,
@@ -87,8 +95,41 @@
 
             body {}
 
+            h1 {
+
+                font-size: 7rem;
+
+            }
+
+            .splash p {
+                font-size: 1rem;
+            }
+
             article {
                 padding: 70px 0 0 0;
+                align-self: start;
+            }
+
+            article p {
+                max-width: 300px;
+            }
+
+            .data-container {
+
+                margin: 0 auto;
+                padding: 20px 10px 30px 10px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                background-color: #f4f4f4;
+
+            }
+
+            .backgroundbox {
+                background-color: white;
+                padding: 50px;
+                /*            box-shadow: 5px 10px black;*/
+                width: 200px;
+                height: 300px;
             }
 
             header {
@@ -214,7 +255,22 @@
 
         }
 
+        @media screen and (min-width:934px) {
+            h1 {
+                font-size: 8rem;
+            }
+
+            .splash p {
+                font-size: 2rem;
+            }
+        }
+
+
         @media screen and (min-width:1220px) {
+
+            h1 {
+                font-size: 10rem;
+            }
 
             body {}
 
