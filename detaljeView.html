@@ -106,7 +106,25 @@
             margin: 1em;
         }
 
+<<<<<<< HEAD
         #skrifttyperPop {}
+=======
+        #next_button {
+            position: fixed;
+            top: 0;
+            right: 0;
+            font-size: 4rem;
+            cursor: pointer;
+            margin: 1em;
+        }
+
+        #skrifttyperPop {
+            max-width: 60vw;
+            min-height: 50vh;
+            margin: auto;
+            background: white;
+        }
+>>>>>>> nextIDbutton
 
         h1 {
             font-size: 2rem;
@@ -205,6 +223,7 @@
     <section id="detaljeView" class="hide">
         <article id="skrifttyperPop">
             <button id="detalje_button">←</button>
+            <button id="next_button">→</button>
             <h1 id="h1pop"></h1>
             <div class="imgPop">
                 <img class=plakat>
@@ -252,9 +271,22 @@
         }
 
         function visSkrifttyper() {
-            detalje.querySelector("button").addEventListener("click", () => {
+            detalje.querySelector("#detalje_button").addEventListener("click", () => {
                 history.back();
             });
+
+            detalje.querySelector("#next_button").addEventListener("click", () => {
+                console.log("next button");
+                //Laver en variable som finder ID'et man er på. parseInt laver string om til tal
+                let newID = parseInt(id);
+                //Tilføjer +1 til den ID så man går til den næste i rækken når man klikker på knappen
+                newID++;
+                location.href = "detaljeView.html?id=" + newID;
+
+
+
+
+            })
             alleSkrifttyper.feed.entry.forEach(skrifttype => {
                 if (skrifttype.gsx$id.$t == id) {
                     detalje.querySelector("h1").textContent = skrifttype.gsx$navn.$t;
