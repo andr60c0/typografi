@@ -193,7 +193,8 @@
         }
 
         header {
-            position: absolute;
+            position: fixed;
+            width: 100%;
         }
 
         nav {
@@ -203,8 +204,6 @@
             grid-template-rows: 1fr;
             font-family: audrey;
             font-size: 1.1rem;
-            position: fixed;
-            width: 100%;
 
 
 
@@ -311,23 +310,66 @@
 
 
         @media screen and (min-width:768px) {
+
+            body {
+                margin: 0px 100px;
+            }
+
+            header {
+                position: fixed;
+                width: calc(100% - 200px);
+            }
+
             .imgPop {
-
-
-                margin: 0 auto;
-                padding: 30px 280px 30px 280px;
-                background-color: #F4F4F4;
+                padding: 100px;
             }
 
             .longTextBox {
-
-                padding: 100px 250px 100px 250px;
+                color: rgb(10, 192, 247);
+                background-color: #242A31;
+                padding: 100px;
                 margin: 0;
 
             }
 
             .shortTextBox {
-                padding: 100px 250px 100px 250px;
+                background-color: #F4F4F4;
+                color: rgb(10, 192, 247);
+                padding: 100px;
+                margin: 0;
+
+            }
+
+            nav {
+                background-color: #242A31;
+                display: grid;
+                grid-template-columns: 100px 1fr;
+                grid-template-rows: 1fr;
+                font-family: audrey;
+                font-size: 1.1rem;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .imgPop {
+
+
+                margin: 0 auto;
+                /*                padding: 30px 280px 30px 280px;*/
+                background-color: #F4F4F4;
+            }
+
+            .longTextBox {
+
+                /*                padding: 100px 250px 100px 250px;*/
+                margin: 0;
+
+            }
+
+            .shortTextBox {
+                /*                padding: 100px 250px 100px 250px;*/
                 margin: 0;
 
             }
@@ -346,6 +388,142 @@
                 height: 100%;
 
             }
+
+        }
+
+        @media screen and (min-width:930px) {
+
+            body {
+                margin: 0px 150px;
+            }
+
+            .imgPop {
+                padding: 100px;
+            }
+
+            .longTextBox {
+                color: rgb(10, 192, 247);
+                background-color: #242A31;
+                padding: 100px;
+                margin: 0;
+
+            }
+
+            .shortTextBox {
+                background-color: #F4F4F4;
+                color: rgb(10, 192, 247);
+                padding: 100px;
+                margin: 0;
+
+            }
+
+            header {
+                position: fixed;
+                width: calc(100% - 300px);
+            }
+        }
+
+        @media screen and (min-width:1080px) {
+
+            body {
+                margin: 0px 200px;
+            }
+
+            .imgPop {
+                padding: 100px;
+            }
+
+            .longTextBox {
+                color: rgb(10, 192, 247);
+                background-color: #242A31;
+                padding: 100px;
+                margin: 0;
+
+            }
+
+            .shortTextBox {
+                background-color: #F4F4F4;
+                color: rgb(10, 192, 247);
+                padding: 100px;
+                margin: 0;
+
+            }
+
+            header {
+                position: fixed;
+                width: calc(100% - 400px);
+            }
+
+
+        }
+
+        @media screen and (min-width:1220px) {
+
+            body {
+                margin: 0px 200px;
+            }
+
+            .imgPop {
+                padding: 100px 200px;
+            }
+
+            .longTextBox {
+                color: rgb(10, 192, 247);
+                background-color: #242A31;
+                padding: 100px 200px;
+                margin: 0;
+
+            }
+
+            .shortTextBox {
+                background-color: #F4F4F4;
+                color: rgb(10, 192, 247);
+                padding: 100px 200px;
+                margin: 0;
+
+            }
+
+            header {
+                position: fixed;
+                width: calc(100% - 400px);
+            }
+
+
+        }
+
+
+
+        @media screen and (min-width:1600px) {
+
+            body {
+                margin: 0px 200px;
+            }
+
+            .imgPop {
+                padding: 100px 325px;
+            }
+
+            .longTextBox {
+                color: rgb(10, 192, 247);
+                background-color: #242A31;
+                padding: 100px 325px;
+                margin: 0;
+
+            }
+
+            .shortTextBox {
+                background-color: #F4F4F4;
+                color: rgb(10, 192, 247);
+                padding: 100px 325px;
+                margin: 0;
+
+            }
+
+            header {
+                position: fixed;
+                width: calc(100% - 400px);
+            }
+
 
         }
 
