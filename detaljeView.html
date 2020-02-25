@@ -358,11 +358,12 @@
                 font-size: 2rem;
             }
 
-            .characterSet {
-                background-color: red;
-                width: 100%;
-                height: 100%;
+            .characterset_billede {
+                background-color: #242A31;
+            }
 
+            .numbers_billede {
+                background-color: #0CB1F2;
             }
 
             li {}
@@ -670,12 +671,15 @@
             <button id="next_button">→</button>
             <h1 id="h1pop"></h1>
             <div class="imgPop">
-                <img class=plakat>
+                <img src="" alt="">
             </div>
             <p class="longTextBox"></p>
             <p class="shortTextBox"></p>
-            <div class="characterSet">
-                <img>
+            <div class="characterset_billede">
+                <img src="" alt="" class="a">
+            </div>
+            <div class="numbers_billede">
+                <img src="" alt="" class="b">
             </div>
         </article>
     </section>
@@ -737,6 +741,9 @@
                     detalje.querySelector("img").src = `img/${skrifttype.gsx$imgs.$t}.svg`;
                     detalje.querySelector("p+p").textContent = skrifttype.gsx$kort.$t;
                     detalje.querySelector("p").textContent = skrifttype.gsx$lang.$t;
+                    detalje.querySelector(".a").src = `characterset/${skrifttype.gsx$characterset.$t}.svg`;
+                    detalje.querySelector(".b").src = `characterset/${skrifttype.gsx$numbers.$t}.svg`;
+
 
                     detalje.querySelector("#skrifttyperPop").classList.add(skrifttype.gsx$class.$t);
 
@@ -744,6 +751,22 @@
                     //her mangler kode til at hente characterset billedet
                 }
             });
+        }
+
+        function filtrering() {
+            filter = this.dataset.kategori;
+            console.log("filtrering", filter);
+
+
+
+            //document.querySelector(".valgt").classList.remove("valgt");
+            document.querySelectorAll(".filter").forEach(elm => {
+                elm.classList.remove("valgt");
+            })
+
+            this.classList.add("valgt");
+            visSkrifttyper();
+            //     document.querySelector(".skrifttyper_kategori").textContent = this.textContent;
         }
 
     </script>
