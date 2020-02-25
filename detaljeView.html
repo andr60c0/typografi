@@ -106,9 +106,9 @@
             margin: 1em;
         }
 
-<<<<<<< HEAD
+
         #skrifttyperPop {}
-=======
+
         #next_button {
             position: fixed;
             top: 0;
@@ -119,14 +119,12 @@
         }
 
         #skrifttyperPop {
-            max-width: 60vw;
-            min-height: 50vh;
-            margin: auto;
+
+
             background: white;
         }
->>>>>>> nextIDbutton
 
-        h1 {
+        nextIDbutton h1 {
             font-size: 2rem;
             font-weight: 100;
             font-style: normal;
@@ -143,36 +141,172 @@
             padding: 10px;
             font-weight: 100;
             margin: 0;
+            font-size: 1.4rem;
 
-            max-width: 300px;
+
+
 
 
         }
 
         #h1pop {
             background-color: rgb(10, 192, 247);
-            padding: 50px 0 50px 0;
+            padding: 120px 0 50px 0;
             margin: 0;
+            color: white;
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 100;
         }
 
 
+
+
+
+
         .imgPop {
-            padding: 40px;
+            padding: 50px;
         }
 
         .longTextBox {
             color: rgb(10, 192, 247);
             background-color: #242A31;
-            padding: 40px;
+            padding: 50px;
+            margin: 0;
 
         }
 
         .shortTextBox {
             background-color: #F4F4F4;
             color: rgb(10, 192, 247);
-            padding: 40px;
+            padding: 50px;
+            margin: 0;
 
         }
+
+
+
+
+
+        .logo {
+            cursor: pointer;
+        }
+
+        header {
+            position: absolute;
+        }
+
+        nav {
+            background-color: #242A31;
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            grid-template-rows: 1fr;
+            font-family: audrey;
+            font-size: 1.1rem;
+            position: fixed;
+            width: 100%;
+
+
+
+        }
+
+        .list_wrapper {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            grid-row: 1;
+            grid-column: 1/3;
+            align-self: center;
+            padding: 30px 0 30px 0;
+
+        }
+
+
+
+        li {
+            cursor: pointer;
+
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            color: white;
+        }
+
+        .headings ul {}
+
+        .headings {
+            padding-right: 20px;
+        }
+
+        .body_texts {}
+
+        .all {
+            padding-right: 20px;
+        }
+
+        .dropdown_content li {
+            padding: 10px;
+            /*
+            border: 1px solid white;
+            border-radius: 5px;
+*/
+            margin-bottom: 10px;
+
+
+
+
+        }
+
+        .dropdown_content:nth-child(1) {
+            padding-top: 25px;
+        }
+
+
+
+
+
+
+        .dropdown_content {
+            display: none;
+            /*            position: absolute;*/
+            /*                background-color: #242A31;*/
+
+            z-index: 1;
+            margin: 0;
+            border-radius: 10px;
+        }
+
+        .dropdown_content a {
+            /*                padding: 0;*/
+
+        }
+
+        .headings:hover .dropdown_content {
+            display: flex;
+
+
+            flex-direction: column;
+
+        }
+
+        .body_texts:hover .dropdown_content {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+
+        .logo {
+            display: none;
+            width: 100px;
+            height: 75px;
+            grid-row: 1;
+            grid-column: 1;
+            padding: 5px;
+        }
+
 
 
 
@@ -219,6 +353,40 @@
 </head>
 
 <body>
+
+    <header>
+        <nav>
+            <img class="logo" src="img/Logo.svg">
+
+            <ul class="list_wrapper">
+
+                <li class="all">ALL</li> <span class="span_left"></span>
+
+                <li class="headings">HEADINGS
+                    <ul class="dropdown_content">
+
+                        <li class="all_padding" class="filter valgt" data-kategori="alleO">ALL</li>
+                        <li class="filter" data-kategori="sans-serif">SANS-SERIFS</li>
+                        <li class="filter" data-kategori="serif">SERIFS</li>
+
+                    </ul>
+                </li> <span class="span_right"></span>
+                <li class="body_texts">BODY TEXTS
+                    <ul class="dropdown_content">
+
+                        <li class="filter valgt" data-kategori="alleB">ALL</li>
+                        <li class="filter" data-kategori="sans-serif">SANS-SERIFS</li>
+                        <li class="filter" data-kategori="serif">SERIFS</li>
+
+                    </ul>
+                </li>
+            </ul>
+
+
+        </nav>
+
+    </header>
+
 
     <section id="detaljeView" class="hide">
         <article id="skrifttyperPop">
