@@ -69,8 +69,8 @@
 
             margin: 0 auto;
             padding: 20px 10px 30px 10px;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            display: block;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
             background-color: #f4f4f4;
             grid-gap: 20px;
         }
@@ -79,9 +79,9 @@
             background-color: white;
             padding: 50px;
             box-shadow: 5px 5px 3px -5px rgba(0, 0, 0, 0.41);
-
-            width: 300px;
-            height: 400px;
+            margin: 0 auto;
+            width: 200px;
+            height: 300px;
             cursor: pointer;
 
         }
@@ -91,8 +91,26 @@
 
         }
 
+        article h3 {
+            padding: 25px 0px 25px 0px;
+            font-family: aileron;
+            font-size: 1.2rem;
+            margin: 0 auto;
+            text-align: center;
+        }
+
         article p {
             max-width: 300px;
+            margin: 0 auto;
+            padding: 0 40px 0 40px;
+        }
+
+        article #style {
+            padding-bottom: 50px;
+        }
+
+        article #classic {
+            padding-bottom: 10px;
         }
 
         .splash {
@@ -294,14 +312,30 @@
 
             body {}
 
+            .wrapper {
+                max-width: 90vw;
+                margin: 0 auto;
+            }
+
+            .data-container {
+
+                margin: 0 auto;
+                padding: 20px 10px 30px 10px;
+                display: block;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                background-color: #f4f4f4;
+                grid-gap: 20px;
+            }
+
             .backgroundbox {
                 background-color: white;
                 padding: 50px;
-                /*            box-shadow: 5px 10px black;*/
-                /*
-            width: 200px;
-            height: 300px;
-*/
+                box-shadow: 5px 5px 3px -5px rgba(0, 0, 0, 0.41);
+
+                width: 300px;
+                height: 400px;
+                cursor: pointer;
+
             }
 
             .logo {
@@ -323,9 +357,31 @@
                 align-self: start;
             }
 
-            article p {
-                max-width: 300px;
+            article h3 {
+                padding: 25px 0px 25px 0px;
+                font-family: aileron;
+                font-size: 1.2rem;
+                margin: 0 auto;
+
+
             }
+
+            article p {
+                max-width: 350px;
+                margin: 0 auto;
+                padding: 0 40px 0 40px;
+                text-align: center;
+            }
+
+            article #style {
+                padding-bottom: 50px;
+            }
+
+            article #classic {
+                padding-bottom: 10px;
+            }
+
+
 
 
 
@@ -339,8 +395,11 @@
                 font-family: aileron;
                 font-size: 1.2rem;
                 position: fixed;
-                width: 100%;
 
+            }
+
+            nav {
+                max-width: 90vw;
 
             }
 
@@ -451,7 +510,16 @@
 
         @media screen and (min-width:934px) {
 
+            .backgroundbox {
+                background-color: white;
+                padding: 50px;
+                box-shadow: 5px 5px 3px -5px rgba(0, 0, 0, 0.41);
 
+                width: 300px;
+                height: 400px;
+                cursor: pointer;
+
+            }
 
             h1 {
                 font-size: 8rem;
