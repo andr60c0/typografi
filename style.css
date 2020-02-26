@@ -26,14 +26,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
             background-color: #f4f4f4;
-
             grid-gap: 20px;
-
-
-
-
-
-
         }
 
         .backgroundbox {
@@ -217,11 +210,20 @@
 
         .logo {
             display: none;
+
             width: 100px;
             height: 75px;
+            /*grid-row: 1;*/
+            /*grid-column: 1;*/
+            padding: 5px;
+
+        }
+
+        nav a {
+
             grid-row: 1;
             grid-column: 1;
-            padding: 5px;
+
         }
 
 
@@ -438,6 +440,22 @@
                 max-width: 90vw;
 
             }
+
+
+
+            .data-container {
+
+                margin: 0 auto;
+                padding: 20px 10px 30px 10px;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+                background-color: #f4f4f4;
+                grid-gap: 20px;
+
+
+            }
+
+
 
         }
 
