@@ -40,7 +40,7 @@
 
      container.textContent = "";
 
-     alleSkrifttyper.feed.entry.forEach(skrifttype => {
+     alleSkrifttyper.feed.entry.forEach((skrifttype, i) => {
 
 
          if (filter == "alle" || (filter == skrifttype.gsx$type.$t && skrifttype.gsx$overskriftbrodtekst.$t == "overskrift") || (filter == "alleO" && skrifttype.gsx$overskriftbrodtekst.$t == "overskrift") || (filter == "alleB" && skrifttype.gsx$overskriftbrodtekst.$t == "brødtekst")) {
@@ -49,8 +49,10 @@
              let klon = template.cloneNode(true).content;
              klon.querySelector("h3").textContent = skrifttype.gsx$navn.$t;
              klon.querySelector("img").src = `img/${skrifttype.gsx$imgs.$t}.svg`;
-             klon.querySelector("#style span").textContent = skrifttype.gsx$style.$t;
-             klon.querySelector("#classic span").textContent = skrifttype.gsx$classic.$t;
+             klon.querySelector("img").id = "id" + i;
+             klon.querySelector(".style span").textContent = skrifttype.gsx$style.$t;
+             klon.querySelector(".classic span").textContent = skrifttype.gsx$classic.$t;
+
              //             klon.querySelector("#skrifttyperPop").classList.add(skrifttype.gsx$class.$t);
              klon.querySelector(".skrifttyper").addEventListener("click", () => {
                  location.href = "detaljeView.html?id=" + skrifttype.gsx$id.$t;

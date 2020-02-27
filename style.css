@@ -38,7 +38,6 @@
 
         footer p {
             font-size: .8rem;
-            color: #242A31;
 
         }
 
@@ -69,12 +68,11 @@
         .data-container {
 
             margin: 0 auto;
-            padding: 40px 40px 0px 40px;
+            padding: 20px 10px 30px 10px;
             display: grid;
-            grid-template-columns: repeat(1, 1fr);
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
             background-color: #f4f4f4;
-            grid-gap: 40px;
-
+            grid-gap: 20px;
 
         }
 
@@ -91,17 +89,26 @@
 
         }
 
-
-
-
-        article p {
-            /*                max-width: 350px;*/
-            margin: 0 auto;
-            padding: 0 0px 0 10px;
-            color: #2a3e57;
+        article {
+            /*            place-self: center center;*/
 
         }
 
+        article h3 {
+            padding: 25px 0px 25px 10px;
+            font-family: aileron;
+            font-size: 1.2rem;
+            margin: 0 auto;
+
+
+
+        }
+
+        article p {
+            /*            max-width: 300px;*/
+            margin: 0 auto;
+            padding: 0 0px 0 10px;
+        }
 
         article #style {
             padding-bottom: 50px;
@@ -109,10 +116,6 @@
 
         article #classic {
             padding-bottom: 10px;
-        }
-
-        strong {
-            font-weight: 400;
         }
 
         .splash {
@@ -127,9 +130,9 @@
             font-family: simplifica;
             text-align: center;
             color: white;
-            font-size: 1rem;
+            font-size: 2rem;
             font-weight: 100;
-            letter-spacing: 5px;
+            letter-spacing: 10px;
             margin: 0;
         }
 
@@ -137,14 +140,16 @@
             font-family: simplifica;
             text-align: center;
             color: white;
-            font-size: 4rem;
+            font-size: 3rem;
             font-weight: 100;
-            letter-spacing: 3px;
+            letter-spacing: 10px;
             margin: 0;
 
         }
 
-
+        .splash p {
+            font-size: 1.5rem;
+        }
 
 
         p {
@@ -155,13 +160,10 @@
         }
 
         h3 {
-
-            font-family: aileron;
-            color: #2a3e57;
-            padding: 25px 0px 25px 10px;
+            margin-left: 5px;
             font-family: aileron;
             font-size: 1.4rem;
-            margin: 0 auto;
+            padding-left: 10px;
         }
 
 
@@ -220,12 +222,14 @@
             list-style-type: none;
             padding: 0;
             color: white;
+
         }
 
         .headings ul {}
 
         .headings {
             padding-right: 20px;
+
         }
 
         .body_texts {}
@@ -236,6 +240,7 @@
 
         .dropdown_content li {
             padding: 10px;
+
 
 
 
@@ -264,6 +269,7 @@
             color: white;
             background-color: #242A31;
 
+
         }
 
         .dropdown_content a {
@@ -273,9 +279,8 @@
 
         .headings:hover .dropdown_content {
             display: flex;
-
-
             flex-direction: column;
+
 
         }
 
@@ -316,13 +321,6 @@
 
             body {}
 
-            .data-container {
-                grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-                grid-gap: 40px;
-                padding: 40px 40px 0px 40px;
-
-            }
-
             .wrapper {
                 max-width: 90vw;
                 margin: 0 auto;
@@ -338,26 +336,31 @@
             h1 {
 
                 font-size: 7rem;
-                letter-spacing: 10px;
-                padding: 50px 0px 0px 0px;
 
             }
 
             .splash p {
-
-                font-size: 1.5rem;
-                padding: 0 0 50px 0;
-                letter-spacing: 8px;
-
+                font-size: 1rem;
             }
 
             article {
-
+                padding: 70px 0 0 0;
                 align-self: start;
             }
 
+            article h3 {
+                padding: 25px 0px 25px 10px;
+                font-family: aileron;
+                font-size: 1.4rem;
+                margin: 0 auto;
 
 
+            }
+
+            article p {
+                /*                max-width: 350px;*/
+                margin: 0 auto;
+            }
 
             article #style {
                 padding-bottom: 50px;
@@ -499,7 +502,9 @@
                 font-size: 8rem;
             }
 
-
+            .splash p {
+                font-size: 2rem;
+            }
         }
 
 
@@ -514,7 +519,9 @@
 
             body {}
 
-            article {}
+            article {
+                padding: 70px 0 0 0;
+            }
 
             .wrapper {
                 max-width: 90vw;
