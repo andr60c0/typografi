@@ -65,14 +65,20 @@
 
         }
 
+        .classic {
+            padding-bottom: 5px;
+            margin: 0;
+        }
+
         .data-container {
 
             margin: 0 auto;
-            padding: 20px 10px 30px 10px;
+            padding: 40px 40px 0px 40px;
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            grid-template-columns: repeat(1, 1fr);
             background-color: #f4f4f4;
-            grid-gap: 20px;
+            grid-gap: 40px;
+
 
         }
 
@@ -92,6 +98,7 @@
         article {
             /*            place-self: center center;*/
 
+
         }
 
         article h3 {
@@ -99,24 +106,26 @@
             font-family: aileron;
             font-size: 1.2rem;
             margin: 0 auto;
-
-
-
+            color: #334860;
         }
 
         article p {
             /*            max-width: 300px;*/
             margin: 0 auto;
             padding: 0 0px 0 10px;
+            margin-left: 5px;
+            font-family: aileron;
+            font-size: 1rem;
+            font-weight: 200;
+            color: #334860;
         }
 
-        article #style {
+        article .style {
             padding-bottom: 50px;
+            margin: 0;
         }
 
-        article #classic {
-            padding-bottom: 10px;
-        }
+
 
         .splash {
 
@@ -152,19 +161,9 @@
         }
 
 
-        p {
-            margin-left: 5px;
-            font-family: aileron;
-            font-size: 1.2rem;
-            font-weight: 200;
-        }
 
-        h3 {
-            margin-left: 5px;
-            font-family: aileron;
-            font-size: 1.4rem;
-            padding-left: 10px;
-        }
+
+
 
 
 
@@ -317,9 +316,35 @@
 
 
 
+
         @media screen and (min-width:768px) {
 
+            article p {
+
+                font-size: 1.2rem;
+
+            }
+
+            article h3 {
+
+
+                font-size: 1.4rem;
+
+            }
+
             body {}
+
+
+            .data-container {
+
+                margin: 0 auto;
+                padding: 40px 40px 0px 40px;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+                background-color: #f4f4f4;
+                grid-gap: 40px;
+
+            }
 
             .wrapper {
                 max-width: 90vw;
@@ -344,31 +369,19 @@
             }
 
             article {
-                padding: 70px 0 0 0;
+
                 align-self: start;
             }
 
-            article h3 {
-                padding: 25px 0px 25px 10px;
-                font-family: aileron;
-                font-size: 1.4rem;
-                margin: 0 auto;
 
 
-            }
 
-            article p {
-                /*                max-width: 350px;*/
-                margin: 0 auto;
-            }
 
             article #style {
                 padding-bottom: 50px;
             }
 
-            article #classic {
-                padding-bottom: 10px;
-            }
+
 
 
 
@@ -519,9 +532,7 @@
 
             body {}
 
-            article {
-                padding: 70px 0 0 0;
-            }
+            article {}
 
             .wrapper {
                 max-width: 90vw;
