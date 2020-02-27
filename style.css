@@ -69,10 +69,11 @@
 
             margin: 0 auto;
             padding: 20px 10px 30px 10px;
-            display: block;
-            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
             background-color: #f4f4f4;
             grid-gap: 20px;
+
         }
 
         .backgroundbox {
@@ -80,7 +81,7 @@
             padding: 50px;
             box-shadow: 5px 5px 3px -5px rgba(0, 0, 0, 0.41);
             margin: 0 auto;
-/*
+            /*
             width: 200px;
             height: 300px;
 */
@@ -89,7 +90,7 @@
         }
 
         article {
-            place-self: center center;
+            /*            place-self: center center;*/
 
         }
 
@@ -102,7 +103,7 @@
         }
 
         article p {
-            max-width: 300px;
+            /*            max-width: 300px;*/
             margin: 0 auto;
             padding: 0 40px 0 40px;
         }
@@ -319,30 +320,12 @@
                 margin: 0 auto;
             }
 
-            .data-container {
-
-                margin: 0 auto;
-                padding: 20px 10px 30px 10px;
-                display: block;
-                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-                background-color: #f4f4f4;
-                grid-gap: 20px;
-            }
-
-            .backgroundbox {
 
 
-/*
-                width: 300px;
-                height: 400px;
-*/
 
 
-            }
 
-            .logo {
-                /*                display: block;*/
-            }
+
 
             h1 {
 
@@ -369,7 +352,7 @@
             }
 
             article p {
-                max-width: 350px;
+                /*                max-width: 350px;*/
                 margin: 0 auto;
                 padding: 0 40px 0 40px;
                 text-align: center;
@@ -472,7 +455,7 @@
             .dropdown_content {
                 display: none;
                 position: absolute;
-                /*                background-color: #242A31;*/
+
                 background: rgb(36, 42, 49);
                 background: linear-gradient(180deg, rgba(36, 42, 49, 1) 19%, rgba(146, 166, 190, 0.9374124649859944) 100%);
                 color: white;
@@ -481,10 +464,7 @@
                 border-radius: 10px;
             }
 
-            .dropdown_content a {
-                /*                padding: 0;*/
 
-            }
 
             .headings:hover .dropdown_content {
                 display: flex;
@@ -504,7 +484,7 @@
                 height: 75px;
                 grid-row: 1;
                 grid-column: 1;
-                /*                padding: 5px;*/
+
             }
 
 
@@ -512,14 +492,7 @@
 
         @media screen and (min-width:934px) {
 
-            .backgroundbox {
 
-                /*
-                width: 300px;
-                height: 400px;
-*/
-
-            }
 
             h1 {
                 font-size: 8rem;
@@ -558,17 +531,7 @@
 
 
 
-            .data-container {
 
-                margin: 0 auto;
-                padding: 20px 10px 30px 10px;
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-                background-color: #f4f4f4;
-                grid-gap: 20px;
-
-
-            }
 
 
 
