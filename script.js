@@ -49,9 +49,9 @@
              let klon = template.cloneNode(true).content;
              klon.querySelector("h3").textContent = skrifttype.gsx$navn.$t;
              klon.querySelector("img").src = `img/${skrifttype.gsx$imgs.$t}.svg`;
-             klon.querySelector("#style").textContent = skrifttype.gsx$style.$t;
-             klon.querySelector("#classic").textContent = skrifttype.gsx$classic.$t;
-//             klon.querySelector("#skrifttyperPop").classList.add(skrifttype.gsx$class.$t);
+             klon.querySelector("#style span").textContent = skrifttype.gsx$style.$t;
+             klon.querySelector("#classic span").textContent = skrifttype.gsx$classic.$t;
+             //             klon.querySelector("#skrifttyperPop").classList.add(skrifttype.gsx$class.$t);
              klon.querySelector(".skrifttyper").addEventListener("click", () => {
                  location.href = "detaljeView.html?id=" + skrifttype.gsx$id.$t;
              });
